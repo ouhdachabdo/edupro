@@ -1,0 +1,349 @@
+<link rel="stylesheet" href="faq.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+<title>EduPro-LearNing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+  <nav>
+    <div class="container nav-container">
+      <a href="home.html" class="edu">EduPro</a>
+      <ul class="nav__menu">
+        <li class="li1"><a href="home.html" class="bag1 active hh6">home</a></li>
+        <li class="li1"><a href="about.html" class="bag2 hh6">about</a></li>
+        <li class="li1"><a href="courses.html" class="hh6">courses</a></li>
+        <li class="li1"><a href="roadmap.html" class="hh6">Roadmap</a></li>
+        <li class="li1"><a href="contact.html" class="hh6">contact</a></li>
+        <li class="li1"><a href="faq.html" class="bag3 homeclr hh6">faq</a></li>
+        <li class="li1"><a href="login.html" class="bag4 hh6">login</a></li>
+        <li class="li1">
+        <div class="wrap-check-14">
+        <label class="switch">
+        <input type="checkbox" checked onclick="myFunction()">
+        <span class="slider"></span>
+        </label>
+        </div>
+        </li>
+    </ul>
+    </div>
+    <input type="checkbox" id="check" >
+    <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+  </nav> 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkBtn = document.querySelector('#check');
+      const ul1 = document.querySelector('.nav__menu');
+      
+      checkBtn.addEventListener('change', function() {
+        if (checkBtn.checked) {
+          ul1.style.left = '0%';
+        } else {
+          ul1.style.left = '-110%';
+        }
+      });
+    });
+  </script>
+                  <!-- end of navabr -->
+<section class="faqs">
+  <h2 class="fasq">Frequently Asked Questions</h2>
+  <div class="container faqs__container">
+          <!--  -->
+    <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>How can I enroll in a course?</h4>
+        <p>To enroll in a course, start by creating an account on EduPro Learning. Once registered, you can explore the diverse range of courses available in our catalog. After finding a course that interests you, simply select it and click "Enroll" .</p>
+      </div>
+    </article>
+          <!--  -->
+        <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>What payment methods are accepted?</h4>
+        <p>We accept credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. You can select your preferred payment method during the course enrollment process.</p>
+      </div>
+    </article>
+          <!--  -->
+        <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>How do I access my certificate after completing a course?</h4>
+        <p>Once the course is completed, you will receive an email notification with a link to download your certificate. You can also access your certificates from your dashboard by logging into your account.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>What should I do if I forget my password?</h4>
+        <p>If you forget your password, click the "Forgot Password" link on the login page. You'll be prompted to enter your email address. Follow the instructions sent to your email to reset your password and regain access to your account.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Can I get a refund?</h4>
+        <p>Yes, you can request a refund within 14 days of enrolling in a course, provided you have not yet completed the course. To request a refund, contact our support team with your purchase details.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>How can I contact technical support?</h4>
+        <p>You can contact our technical support via live chat available Monday to Friday, from 9 AM to 6 PM (local time), by email, or by consulting our Technical Support section for guides and tutorials.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>What types of courses are offered on EduPro Learning?</h4>
+        <p>EduPro Learning offers a variety of courses in different fields, such as technology, business, graphic design , marketing and more. Browse our course catalog to find those that match your interests and career goals.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Are there prerequisites for enrolling in certain courses?</h4>
+        <p>Some courses might require specific prerequisites, which are detailed in the course description. Be sure to review these prerequisites before enrolling to ensure you meet the necessary requirements.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>How can I track my progress in a course?</h4>
+        <p>You can track your progress by logging into your EduPro Learning dashboard. Here, you will find an overview of your current courses, track your achievements, and view the certificates you have earned.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>How can I leave reviews for courses I’ve completed?</h4>
+        <p>After finishing a course, you can leave a review to share your experience. Your feedback is crucial as it helps future students make informed decisions and select the courses that best meet their needs.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Are courses accessible on mobile devices?</h4>
+        <p>Yes, EduPro Learning courses are accessible on mobile devices via our dedicated app or mobile browser. This allows you to learn anytime and from anywhere, providing flexibility and convenience for your educational needs.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Can I get personalized support during a course?</h4>
+        <p> Yes, some courses offer personalized support through forums, mentoring sessions, or office hours with the instructor. Check the course details for information on available support options.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Are EduPro certificates recognized by employers?</h4>
+        <p> EduPro Learning certificates are recognized by many employers and can enhance your resume. However, recognition may vary depending on the industry and specific employers.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>What browsers are compatible with EduPro Learning?</h4>
+        <p> EduPro Learning is compatible with modern browsers like Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari. Make sure you are using the latest version of your browser for the best experience.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Can I take multiple courses at the same time?</h4>
+        <p>Yes, you can enroll in and take multiple courses at the same time. Your dashboard provides tools to manage your enrollments and track your progress in each course effectively.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Are there discounts for groups or businesses?</h4>
+        <p>Yes, EduPro Learning provides discounts for group or business enrollments. To explore available options and pricing, please reach out to our sales team for personalized assistance and details.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>How can I update my personal information?</h4>
+        <p>You can update your personal information by logging into your account and going to the "Account Settings" section. From there, you can change your name, email address, password, and other details.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Does EduPro Learning offer free courses?</h4>
+        <p>Yes, we offer a variety of free courses. To find them, simply filter the course catalog by price to view only those available at no cost. This makes it easy to explore and select courses that fit your budget.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>How can I report a technical issue during a course?</h4>
+        <p>If you encounter a technical issue during a course, report it using the "Report a Problem" button within the course interface. Alternatively, you can reach out to our technical support team for assistance.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Can I switch courses after enrolling?</h4>
+        <p>Yes, you can request to switch courses within 14 days of enrolling, provided you have not completed the initial course. Contact our support team for details on the course-switching process.
+</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Does EduPro Learning offer accredited certifications?</h4>
+        <p>Some of our courses provide accredited certifications through partnerships with recognized institutions. To determine if a course includes accreditation, please review the course description for detailed information.</p>
+      </div>
+    </article>
+          <!--  -->
+            <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>How can I become an instructor on EduPro Learning?</h4>
+        <p>If you want to become an instructor, you can apply by filling out the application form available on our site. We will review your application and contact you if your profile meets our criteria.</p>
+      </div>
+    </article>
+          <!--  -->
+                <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Are courses self-paced or do they have start dates?</h4>
+        <p>Most courses on EduPro Learning are self-paced, allowing you to begin whenever it suits you. However, certain courses have specific start dates, which are clearly mentioned in the course description.</p>
+      </div>
+    </article>
+          <!--  -->
+                <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>What is self-paced learning?</h4>
+        <p>Self-paced learning allows you to progress at your own speed without strict deadlines. You can access course content, complete assessments, and earn your certificate when you’re ready.</p>
+      </div>
+    </article>
+          <!--  -->
+                <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Is it possible to download course videos to watch offline?</h4>
+        <p>At the moment, downloading videos for offline viewing is not supported. However, you can easily access and stream all course videos online whenever you want through our platform.</p>
+      </div>
+    </article>
+          <!--  -->
+                <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Why create an account on EduPro Learning?</h4>
+        <p>By creating an account, you can track your progress, access your certificates, save your favorite courses, receive personalized recommendations, and get personalized support.</p>
+      </div>
+    </article>
+          <!--  -->
+                <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Are courses available in multiple languages?</h4>
+        <p>Yes, some courses are offered in multiple languages. To find courses in your preferred language, use the language filter in our course catalog. This will help you easily locate the courses available in the language of your choice.</p>
+      </div>
+    </article>
+          <!--  -->
+                <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>What steps to take if course content issues arise?</h4>
+        <p>If you encounter any issues with course content, please reach out to our support team for assistance. Alternatively, use the "Report a Problem" feature directly within the course interface to notify us of the issue.</p>
+      </div>
+    </article>
+          <!--  -->
+                <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>How can I request assistance for a specific course?</h4>
+        <p>Some courses provide personalized assistance through discussion forums or virtual office hours. For more details on how to access this support, refer to the course information provided.</p>
+      </div>
+    </article>
+          <!--  -->
+                <article class="faq">
+      <div class="faq__icon"><i class="uil uil-plus"></i></div>
+      <div class="question__answer">
+        <h4>Can I access courses after completing them?</h4>
+        <p>Yes, you can access your completed courses anytime from your dashboard. This feature lets you review course content and download any resources you might need for future reference.</p>
+      </div>
+    </article>
+          <!--  -->
+  </div>
+</section>
+<!--  -->
+<footer>
+  <!--  -->
+  <div class="disnone">
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+    <p class="created">privacy policy terms & condition</p>
+    <p class="created">copyright &copy 2024 <span>EduPro</span> . all right reserved</p>
+  </div>
+  <!--  -->
+  <div class="disyes">
+  <div class="fouter">
+    <div>
+      <p class="create">copyright &copy 2024 EduPro . all right reserved</p>
+    </div>
+    <div>
+      <p class="created">privacy policy terms & condition</p>
+    </div>
+  </div>
+  <div>
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+  </div>
+</div>
+</footer>
+</body>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+// show/hide faq answer
+const faqs = document.querySelectorAll('.faq');
+faqs.forEach(faq =>{
+  faq.addEventListener('click' ,() => {
+    faq.classList.toggle('open');
+    const icon = faq.querySelector('.faq__icon i');
+    if(icon.className === 'uil uil-plus'){
+      icon.className = "uil uil-minus";
+    }
+    else{
+      icon.className = "uil uil-plus";
+    }
+  })
+})
+</script>
+
+  <!-- media script -->
+    <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function(){
+      navmenu = document.querySelector(".nav__menu");
+      navmenu.classList.toggle("active");
+    }
+    </script>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <!-- swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<title>EduPro-LearNing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav>
+    <div class="container nav-container">
+      <a href="home.html" class="edu">EduPro</a>
+      <ul class="nav__menu">
+        <li class="li1"><a href="home.html" class="bag1 active homeclr hh6">home</a></li>
+        <li class="li1"><a href="about.html" class="bag2 hh6">about</a></li>
+        <li class="li1"><a href="courses.html" class="hh6">courses</a></li>
+        <li class="li1"><a href="roadmap.html" class="hh6">Roadmap</a></li>
+        <li class="li1"><a href="contact.html" class="hh6">contact</a></li>
+        <li class="li1"><a href="faq.html" class="bag3 hh6">faq</a></li>
+        <li class="li1"><a href="login.html" class="bag4 hh6">login</a></li>
+        <li class="li1">
+        <div class="wrap-check-14">
+        <label class="switch">
+        <input type="checkbox" checked onclick="myFunction()">
+        <span class="slider"></span>
+        </label>
+        </div>
+        </li>
+    </ul>
+    </div>
+    <input type="checkbox" id="check" >
+    <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+  </nav> 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkBtn = document.querySelector('#check');
+      const ul1 = document.querySelector('.nav__menu');
+      
+      checkBtn.addEventListener('change', function() {
+        if (checkBtn.checked) {
+          ul1.style.left = '0%';
+        } else {
+          ul1.style.left = '-110%';
+        }
+      });
+    });
+  </script>
+  <!-- end of navbar -->
+<header>
+  <div class="container header__container">
+    <div class="header__left">
+      <h1>Elevate Your Expertise to Advance Your Career Path</h1>
+      <img class="non" src="img/education.png" alt="">
+      <p>Welcome to EduPro, the premier online education platform designed to help you advance your career. At EduPro, we offer a wide range of courses in various fields, including web development, programming languages, and more. Our platform is user-friendly and accessible to learners of all levels..</p>
+      <a href="courses.html" class="btn btn_primary">get started</a>
+    </div>
+    <div class="header__right">
+      <div class="header__right-image">
+        <img src="img/education.png" alt="">
+      </div>
+    </div>
+  </div>
+</header>
+  <!-- end of header -->
+<section class="categories">
+  <div class="container categories__container">
+    <div class="categories__left">
+      <h1 class="cat">Categories</h1>
+      <p>Explore a diverse range of courses designed to empower and inspire learners in various fields. From Business strategies that drive growth and innovation to the revolutionary world of Blockchain technology, our courses provide cutting-edge knowledge and practical skills. Delve into Game Development to create immersive experiences, or master the art of App Development for both iOS and Android platforms. Enhance your creative talents with Graphic Design courses or gain a deep understanding of Finance to make informed investment decisions. Learn the fundamentals of Marketing to build and grow brands, and advance your expertise in Development across multiple programming languages and frameworks. Whether you are looking to upskill, switch careers, or pursue a passion, our comprehensive courses are tailored to meet your needs.
+      </p>
+      <a href="roadmap.html" class="btnl">Learn More</a>
+    </div>
+    <!--  -->
+    <div class="categories__right">
+      <article class="category">
+        <span class="category__icon"><i class="uil uil-bitcoin-circle"></i></span>
+        <h5>blockchain</h5>
+        <p>Learn blockchain technology for secure, decentralized transactions and innovation.</p>
+      </article>
+                        <!--  -->
+      <article class="category">
+        <span class="category__icon"><i class="uil uil-palette"></i></span>
+        <h5>Graphic Design</h5>
+        <p>Master visual creativity with advanced techniques in graphic design essentials.</p>
+      </article>
+                        <!--  -->
+      <article class="category">
+        <span class="category__icon"><i class="uil uil-usd-circle"></i></span>
+        <h5>Finance</h5>
+        <p>Master financial principles, investment strategies, and economic analysis for success.</p>
+      </article> 
+                        <!--  -->
+      <article class="category">
+        <span class="category__icon"><i class="uil uil-megaphone"></i></span>
+        <h5>Marketing</h5>
+        <p>Learn strategies to build, promote, and grow successful brands effectively.</p>
+      </article>
+                        <!--  -->
+      <article class="category">
+        <span class="category__icon"><i class="uil uil-brackets-curly"></i></span>
+        <h5>development</h5>
+        <p>Master programming and software creation with essential tools and techniques.</p>
+      </article>
+                        <!--  -->
+      <article class="category">
+        <span class="category__icon"><i class="uil uil-puzzle-piece"></i></span>
+        <h5>Busnises</h5>
+        <p>Master strategies, leadership, and management to drive organizational success.</p>
+      </article> 
+                        <!--  -->
+      <article class="category">
+        <span class="category__icon"><i class="uil uil-music"></i></span>
+        <h5>Music</h5>
+        <p>Explore musical creativity, theory, and performance with our dynamic courses.</p>
+      </article> 
+                        <!--  -->
+      <article class="category">
+        <span class="category__icon"><i class="uil uil-apps"></i></span>
+        <h5>App Development</h5>
+        <p>Master app development for iOS and Android with practical, hands-on learning.</p>
+      </article>
+                        <!--  -->
+      <article class="category">
+        <span class="category__icon"><i class="uil uil-game-structure"></i></span>
+        <h5>Game Development</h5>
+        <p>Learn to create engaging games with coding, design, and development skills.</p>
+      </article>
+                        <!--  -->
+    </div>
+  </div>
+</section>
+                <!-- end of categories -->
+<section class="courses">
+  <h2 class="our">Our Popular Courses</h2>
+<div class="container courses__container">
+          <!--  -->
+  <article class="course">
+    <div class="course__image">
+      <img src="img/courses1.png"  alt="Responsive Social Media Website UI Design">
+    </div>
+    <div class="course__info">
+    <h4>Responsive Social Media Website UI Design</h4>
+    <p>Create a responsive social media website UI with intuitive design for seamless user interactions and engagement.</p>
+    <a href="courses.html" class="btn1 btn-primary">Learn More</a>
+    </div>
+  </article>
+            <!--  -->
+  <article class="course">
+    <div class="course__image">
+      <img src="img/game_home.jpg"  alt="Game Development">
+    </div>
+    <div class="course__info">
+    <h4>Game Development: Build, Design, and Innovate </h4>
+    <p>Master game development by building, designing, and innovating engaging and interactive gaming experiences.</p>
+    <a href="courses.html" class="btn1 btn-primary">Learn More</a>
+    </div>
+  </article>
+            <!--  -->
+  <article class="course">
+    <div class="course__image">
+      <img src="img/courses2.png"  alt="Responsive Smarthome UI Design">
+    </div>
+    <div class="course__info">
+    <h4>Responsive Smarthome UI Design</h4>
+    <p>Design a responsive SmartHome UI with intuitive navigation, modern aesthetics, and seamless device integration.</p>
+    <a href="courses.html" class="btn1 btn-primary">Learn More</a>
+    </div>
+  </article>
+            <!--  -->
+    <article class="course">
+    <div class="course__image">
+      <img src="img/courses4.png"  alt="Web development">
+    </div>
+    <div class="course__info">
+    <h4>Web Development</h4>
+    <p>Master building and designing websites with skills in HTML, CSS, JavaScript, and modern frameworks.</p>
+    <a href="courses.html" class="btn1 btn-primary">Learn More</a>
+    </div>
+  </article>
+              <!--  -->
+    <article class="course">
+    <div class="course__image">
+      <img src="img/courses5.png"  alt="app development">
+    </div>
+    <div class="course__info">
+    <h4>App Development</h4>
+    <p>Master the skills to design and build functional, user-friendly apps for various platforms and devices.</p>
+    <a href="courses.html" class="btn1 btn-primary">Learn More</a>
+    </div>
+  </article>
+                <!--  -->
+    <article class="course">
+    <div class="course__image">
+      <img src="img/courses6.png"  alt="Blockchain">
+    </div>
+    <div class="course__info">
+    <h4>Blockchain</h4>
+    <p>Understand blockchain technology's principles, applications, and potential to revolutionize security and transparency in transactions.</p>
+    <a href="courses.html" class="btn1 btn-primary">Learn More</a>
+    </div>
+  </article> 
+              <!--  -->
+    <article class="course">
+    <div class="course__image">
+      <img src="img/design_home.png"  alt="design">
+    </div>
+    <div class="course__info">
+    <h4>Design</h4>
+    <p>Master visual design principles to create stunning graphics, layouts, and user interfaces for various media.</p>
+    <a href="courses.html" class="btn1 btn-primary">Learn More</a>
+    </div>
+  </article> 
+              <!--  -->
+    <article class="course">
+    <div class="course__image">
+      <img src="img/office.png"  alt="MS Office">
+    </div>
+    <div class="course__info">
+    <h4>MS Office</h4>
+    <p>Master MS Office tools: Word, Excel, and PowerPoint for efficient document creation, data management, and presentations</p>
+    <a href="courses.html" class="btn1 btn-primary">Learn More</a>
+    </div>
+  </article> 
+              <!--  -->
+    <article class="course corsesnon">
+    <div class="course__image">
+      <img src="img/busnises.jpg"  alt="Busnises">
+    </div>
+    <div class="course__info">
+    <h4>Busnises</h4>
+    <p>Master business strategies, management skills, and entrepreneurial techniques to drive growth and achieve success.</p>
+    <a href="courses.html" class="btn1 btn-primary">Learn More</a>
+    </div>
+  </article> 
+              <!--  -->
+</div>
+</section>
+                <!-- end of courses -->
+<section class="grow"></section>
+  <div class="apply">
+  <h3><b>L</b>earn   <b>.</b>  <b>A</b>pply  <b>.</b>  <b>G</b>row  <b>.</b>  </h3>
+  <p>Edupro Learning is the worldwide leader in free online training for</p>
+  <p>inbound marketing, sales, and customer service professionals. We</p>
+  <p>specialize in comprehensive certifications, singular topic courses, and</p>
+  <p>bite-sized lessons for professionals looking to grow their career and</p>
+  <p>business.</p>
+  <br>
+  <br>
+  <a href="login.html">sign up for free</a>
+  </div>
+</section>
+  <!-- learn apply grow -->
+<section>
+  <div class="vidhome">
+    <div class="videohome">
+      <video src="img/video.mp4" autoplay muted></video>
+    </div>
+    <div class="gradawar">
+      <div class="grad">
+        <p><i class="uil uil-graduation-cap"></i><span class="clr">Edupro learning</span> mission is to transform the way people and companies grow by offering online trainings for the digital age. From quick, practical courses to comprehensive certifications, you’ll learn everything you need to know about cutting edge business topics</p>
+      </div>
+      <div class="award">
+        <p><i class="uil uil-award"></i>As <span class="clr">Edupro</span> official <span class="clr">learning</span> resource,edupro Academy aims to educate users on the edupro software, so they can market, sell, and grow an inbound business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- video home -->
+<section>
+  <div class="whylearn">
+  <h1>🤔</h1>
+  <h2 class="our">Why learn with Edupro learning Academy?</h2>
+  <div class="divv">
+    <div class="ayc">
+      <h4>👨‍🎓</h4>
+      <h3>Advance your career</h3>
+      <p>Invest in yourself and your career by staying up to date on the latest trends in digital marketing, sales, customer support, and more.</p>
+    </div>
+    <div class="soys">
+      <H4>⭐</H4>
+      <h3>Show off your skills</h3>
+      <p class="add">Add a globally recognized certification to your LinkedIn profile to show your employer — or future employer — you know your stuff.</p>
+    </div>
+    <div class="gyb">
+      <H4>↗↗↗</H4>
+      <h3>Grow your business</h3>
+      <p class="build">Build your business strategy on the inbound methodology to generate more leads, close more deals, and delight your customers.</p>
+    </div>
+  </div>
+  </div>
+</section>
+  <!-- why learn -->
+  <!-- testimonials -->
+<section class="containers testimonials__container mySwiper">
+  <h2 class="our">Student's Testimonials</h2>
+  <div class="swiper-wrapper">
+    <article class="testimonials swiper-slide">
+      <div class="avatar">
+        <img src="img/avatar1.jpg" alt="">
+      </div>
+      <div class="testimonial__info">
+        <h5>abdo ouh</h5>
+        <small>student</small>
+      </div>
+      <div class="testimonials__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor natus ducimus consectetur temporibus animi omnis dolores ad, eum repellendus eius ea, odio iusto exercitationem reprehenderit velit totam, laborum tempore?
+        </p>
+      </div>
+    </article>
+        <!--  -->
+<article class="testimonials swiper-slide">
+      <div class="avatar">
+        <img src="img/avatar2.jpg" alt="">
+      </div>
+      <div class="testimonial__info">
+        <h5>abdo sel</h5>
+        <small>student</small>
+      </div>
+      <div class="testimonials__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor natus ducimus consectetur temporibus animi omnis dolores ad, eum repellendus eius ea, odio iusto exercitationem reprehenderit velit totam, laborum tempore?
+        </p>
+      </div>
+    </article>
+        <!--  -->
+<article class="testimonials swiper-slide">
+      <div class="avatar">
+        <img src="img/avatar3.jpg" alt="">
+      </div>
+      <div class="testimonial__info">
+        <h5>yassir tec</h5>
+        <small>student</small>
+      </div>
+      <div class="testimonials__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor natus ducimus consectetur temporibus animi omnis dolores ad, eum repellendus eius ea, odio iusto exercitationem reprehenderit velit totam, laborum tempore?
+        </p>
+      </div>
+    </article>
+            <!--  -->
+<article class="testimonials swiper-slide">
+      <div class="avatar">
+        <img src="img/avatar4.jpg" alt="">
+      </div>
+      <div class="testimonial__info">
+        <h5>abdo ouh</h5>
+        <small>student</small>
+      </div>
+      <div class="testimonials__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor natus ducimus consectetur temporibus animi omnis dolores ad, eum repellendus eius ea, odio iusto exercitationem reprehenderit velit totam, laborum tempore?
+        </p>
+      </div>
+    </article>
+              <!--  -->
+<article class="testimonials swiper-slide">
+      <div class="avatar">
+        <img src="img/avatar5.jpg" alt="">
+      </div>
+      <div class="testimonial__info">
+        <h5>abdo ouh</h5>
+        <small>student</small>
+      </div>
+      <div class="testimonials__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor natus ducimus consectetur temporibus animi omnis dolores ad, eum repellendus eius ea, odio iusto exercitationem reprehenderit velit totam, laborum tempore?
+        </p>
+      </div>
+    </article>
+                  <!--  -->
+<article class="testimonials swiper-slide">
+      <div class="avatar">
+        <img src="img/avatar6.jpg" alt="">
+      </div>
+      <div class="testimonial__info">
+        <h5>abdo ouh</h5>
+        <small>student</small>
+      </div>
+      <div class="testimonials__body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor natus ducimus consectetur temporibus animi omnis dolores ad, eum repellendus eius ea, odio iusto exercitationem reprehenderit velit totam, laborum tempore?
+        </p>
+      </div>
+    </article>
+  </div>
+  <div class="swiper-pagination"></div>
+</section>
+<!-- end of testimonials -->
+<div class="alert">
+  <div class="be">
+    Be alert. Learn from leading experts about the evolution of the programming field and design and more ...
+  </div>
+  <div>
+    <a href="login.html">sign up for free</a>
+  </div>
+</div>
+<!-- Stay sharp -->
+<section class="avant__footer">
+  <div class="division1">
+    <div>
+      <img src="img/logo_transparent.png" class="imglogo" alt="logo">
+    </div>
+    <!--  -->
+    <div >
+      <i class="uil uil-facebook ufooter"></i>
+      <i class="uil uil-instagram ufooter"></i>
+      <i class="uil uil-envelope ufooter"></i>
+      <i class="uil uil-linkedin ufooter"></i>
+      <i class="uil uil-github ufooter"></i>
+    </div>
+  </div>
+  <!--  -->
+  <div class="containers__footer">
+    <div>
+      <h3 class="titlefooter">company</h3>
+      <div class="links">
+        <li><a href="home.html"><em>> </em>home</a></li>
+        <li><a href="about.html"><em>> </em>about</a></li>
+        <li><a href="courses.html"><em>> </em>courses</a></li>
+        <li><a href="roadmap.html"><em>> </em>Roadmap</a></li>
+      </div>
+    </div>
+    <!--  -->
+    <div class="servicediv">
+      <h3 class="titlefooter">service</h3>
+      <div class="links">
+        <li><a href="road/frontend.html"><em>> </em>Frontend</a></li>
+        <li><a href="road/backend.html"><em>> </em>Backend</a></li>
+        <li><a href="road/app.html"><em>> </em>App Development</a></li>
+        <li><a href="road/game.html"><em>> </em>Game Development</a></li>
+        <li><a href="road/design.html"><em>> </em>Design</a></li>
+        <li><a href="road/office.html"><em>> </em>office productivity</a></li>
+      </div>
+    </div>
+    <!--  -->
+    <div class="coursesdiv">
+      <h3 class="titlefooter">courses</h3>
+      <div class="links">
+        <li><a href="courses.html"><em>> </em>html & css & js ...</a></li>
+        <li><a href="courses.html"><em>> </em>word & excel ...</a></li>
+        <li><a href="courses.html"><em>> </em>flutter</a></li>
+        <li><a href="courses.html"><em>> </em>php & mysql</a></li>
+        <li><a href="courses.html"><em>> </em>adobe illustrator</a></li>
+        <li><a href="courses.html"><em>> </em>unity</a></li>
+      </div>
+    </div>
+    <!--  -->
+    <div class="supportdiv">
+      <h3 class="titlefooter">support</h3>
+      <div class="links">
+        <li><a href="faq.html"><em>> </em>faqs</a></li>
+        <li><a href="contact.html"><em>> </em>contact</a></li>
+      </div>
+    </div>
+    <!--  -->
+    <div class="contactdiv">
+      <h3 class="titlefooter">contact us</h3>
+      <div>
+        <i class="uil uil-phone l"><small>+212 623080125</small></i>
+        <br>
+        <i class="uil uil-envelope l"><small class="sm">ouhdachabdelatif&#64gmail.com</small></i>
+      </div>
+      <br>
+      <h4 class="or">or</h4>
+      <div>
+        <i class="uil uil-phone l"><small>+212 653664016</small></i>
+        <br>
+        <i class="uil uil-envelope l"><small>alisaltani567&#64gmail.com</small></i>
+      </div>
+    </div>
+</section>
+<!-- end of avant-footer -->
+<footer>
+  <div class="disnone">
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+    <p class="created">privacy policy terms & condition</p>
+    <p class="created">copyright &copy 2024 <span>EduPro</span> . all right reserved</p>
+  </div>
+  <!--  -->
+  <div class="disyes">
+  <div class="fouter">
+    <div>
+      <p class="created">copyright &copy 2024 EduPro . all right reserved</p>
+    </div>
+    <div>
+      <p class="created">privacy policy terms & condition</p>
+    </div>
+  </div>
+  <div>
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+  </div>
+</div>
+</footer>
+</body>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween:30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // when window width is => 600px
+      breakpoints:{
+        768:{
+          slidesPerView: 1
+        }
+      }
+    });
+  </script>
+  <!-- media script -->
+ 
+</html>

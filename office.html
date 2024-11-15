@@ -1,0 +1,187 @@
+<link rel="stylesheet" href="office.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+<title>EduPro-LearNing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+<!-- navbar -->
+<nav class="z-ind">
+  <div class="container nav-container">
+    <a href="../home.html" class="edu">EduPro</a>
+    <ul class="nav__menu">
+      <li class="li1"><a href="../home.html" class="bag1 active hh6">home</a></li>
+      <li class="li1"><a href="../about.html" class="bag2 hh6">about</a></li>
+      <li class="li1"><a href="../courses.html" class="hh6">courses</a></li>
+      <li class="li1"><a href="../roadmap.html" class="hh6">Roadmap</a></li>
+      <li class="li1"><a href="../contact.html" class="hh6">contact</a></li>
+      <li class="li1"><a href="../faq.html" class="bag3 hh6">faq</a></li>
+      <li class="li1"><a href="../login.html" class="bag4 hh6">login</a></li>
+      <li class="li1">
+      <div class="wrap-check-14">
+      <label class="switch">
+      <input type="checkbox" checked onclick="myFunction()">
+      <span class="slider"></span>
+      </label>
+      </div>
+      </li>
+  </ul>
+  </div>
+  <input type="checkbox" id="check" >
+  <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+</nav> 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const checkBtn = document.querySelector('#check');
+    const ul1 = document.querySelector('.nav__menu');
+    
+    checkBtn.addEventListener('change', function() {
+      if (checkBtn.checked) {
+        ul1.style.left = '0%';
+      } else {
+        ul1.style.left = '-110%';
+      }
+    });
+  });
+</script>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+</script>
+                    <!--  -->
+<section class="zz">
+<div class="timline zz">
+        <div class="containnere left-container">
+            <img src="../img/excel.png" alt="i">
+              <div class="text-box">
+                <h2>Microsoft Excel</h2>
+                <small>1-10 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand the Excel interface (ribbons, worksheets, cells).</p>
+                <p><em>-</em>Learn about data entry and formatting (EX : <em>'number formats' , 'text alignment' , 'cell borders'</em> ).</p>
+                <p><em>-</em>Explore basic functions and formulas (EX : <em> 'SUM' , 'AVERAGE' , 'COUNT'</em>).</p>
+                <p><em>-</em>Learn how to create and edit simple charts and graphs.</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Learn about data sorting and filtering.</p>
+                <p><em>-</em>Explore conditional formatting to highlight important data.</p>
+                <p><em>-</em>Understand basic data analysis functions (EX : <em>'VLOOKUP' , 'HLOOKUP' , 'IF' , 'CONCATENATE'</em> ).</p>
+                <p><em>-</em>Learn how to create pivot tables and pivot charts.</p>
+                <p><em>-</em>Understand data validation and drop-down lists.</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Explore advanced functions (EX : <em>'INDEX' , 'MATCH' , 'OFFSET' , 'INDIRECT'</em> ).</p>
+                <p><em>-</em>Learn about advanced data analysis tools (EX : <em>'Power Query' , 'Power Pivot'</em> ).</p>
+                <p><em>-</em>Understand macros and VBA (Visual Basic for Applications) for automation.</p>
+                <p><em>-</em>Explore advanced charting techniques (EX : <em>'combination charts' , 'sparklines'</em> ).</p>
+                <p><em>-</em>Learn how to collaborate on workbooks and protect data.</p>
+                <h4><ins> * </ins>Projects : </h4>
+                <p><em>-</em>Create a personal budget tracker.</p>
+                <p><em>-</em>Develop a sales dashboard with pivot tables and charts.</p>
+                <p><em>-</em>Automate repetitive tasks using VBA.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/word.png" alt="i">
+            <div class="text-box">
+                <h2>Microsoft Word</h2>
+                <small>1-7 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand the Word interface (ribbons, document views, navigation pane).</p>
+                <p><em>-</em>Learn about text formatting (EX : <em>'fonts' , 'sizes' , 'styles' , 'alignment'</em> ).</p>
+                <p><em>-</em>Explore paragraph formatting (EX : <em> 'line spacing' , 'indentation' , 'bullet points' , 'numbering'</em>).</p>
+                <p><em>-</em>Learn how to insert and format images, tables, and shapes.</p>
+                <p><em>-</em>Understand basic document setup (EX : <em> 'margins', 'page orientation', 'headers', 'footers'</em>).</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Learn about styles and themes for consistent formatting.</p>
+                <p><em>-</em>Explore section breaks and page numbering.</p>
+                <p><em>-</em>Understand how to create and format tables of contents and indexes.</p>
+                <p><em>-</em>Learn how to work with templates and custom document templates.</p>
+                <p><em>-</em>Explore mail merge for bulk letters and labels.</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Learn about advanced formatting techniques (EX : <em>'multi-level lists' , 'columns' , 'text wrapping'</em> ).</p>
+                <p><em>-</em>Understand the use of references, citations, and bibliographies.</p>
+                <p><em>-</em>Explore document protection and collaboration tools (EX : <em>'track changes', 'comments'</em> ).</p>
+                <p><em>-</em>Learn about creating fillable forms.</p>
+                <p><em>Understand how to automate tasks with macros.</em></p>
+                <h4><ins> * </ins>projects : </h4>
+                <p><em>-</em>Create a professional resume using Word templates.</p>
+                <p><em>-</em>Develop a formatted report with a table of contents and references.</p>
+                <p><em>-</em>Design a newsletter with images, columns, and hyperlinks.</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/power-point.png" alt="i">
+            <div class="text-box">
+                <h2>Microsoft PowerPoint</h2>
+                <small>1-10 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand the PowerPoint interface (ribbons, slides, slide sorter).</p>
+                <p><em>-</em>Learn how to create and format slides (EX : <em>'layouts' , 'placeholders' , 'themes'</em> ).</p>
+                <p><em>-</em>Explore basic text formatting and alignment.</p>
+                <p><em>-</em>Learn how to insert images, shapes, and icons.</p>
+                <p><em>-</em>Understand how to create simple transitions and animations.</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Learn about slide master and template creation.</p>
+                <p><em>-</em>Explore advanced animation techniques (EX : <em>'custom paths' , 'triggers'</em> ).</p>
+                <p><em>-</em>Understand how to work with multimedia (EX : <em>'inserting videos' , 'audio'</em>).</p>
+                <p><em>-</em>Learn about charts and diagrams (EX : <em>'SmartArt' , 'organizational charts'</em> ).</p>
+                <p><em>-</em>Explore collaboration tools (EX : <em>'comments' , 'co-authoring'</em> ).</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Learn about advanced presentation techniques (EX :  <em>'rehearse timings' , 'slide show setup'</em> ).</p>
+                <p><em>-</em>Explore linking and embedding content (EX : <em>' Excel charts' , 'Word documents'</em>).</p>
+                <p><em>-</em>Understand how to create interactive presentations (EX : <em> 'hyperlinks', 'action buttons'</em>).</p>
+                <p><em>-</em>Learn about creating self-running presentations and exporting to video.</p>
+                <p><em>-</em>Explore PowerPoint automation with macros.</p>
+                <h4><ins> * </ins>Projects : </h4>
+                <p><em>-</em>Create a business presentation with a professional template.</p>
+                <p><em>-</em>Develop a product demo with interactive elements.</p>
+                <p><em>-</em>Design a pitch deck with animations and multimedia integration.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+</section>
+              <!-- end of office roadmap -->
+<footer>
+  <!--  -->
+  <div class="disnone">
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+    <p class="created">privacy policy terms & condition</p>
+    <p class="created">copyright &copy 2024 <span>EduPro</span> . all right reserved</p>
+  </div>
+  <!--  -->
+  <div class="disyes">
+  <div class="fouter">
+    <div>
+      <p class="created">copyright &copy 2024 EduPro . all right reserved</p>
+    </div>
+    <div>
+      <p class="created">privacy policy terms & condition</p>
+    </div>
+  </div>
+  <div>
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+  </div>
+</div>
+</footer>
+</body>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+// 
+
+</script>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPro-Learning Laravel</title>
+    <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../laravel/laravel__playlist.css">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons/min/css" rel="stylesheet">
+</head>
+<body>
+    <main class="containner">
+        <section class="main-video">
+            <video class="vv" src="../laravel/video/1. Course Introduction.mp4"  controls poster="../../miniature/laravel.jpg"></video>
+            <h3 class="title">1. Course Introduction</h3>
+            <div class="lien">
+                <a href="">Search</a>
+                <a href="">Overview</a>
+                <a href="">Feedback</a>
+                <a href="">Downloads</a>
+            </div>
+            <div class="pages">
+                <section class="search">
+                    <div class="search-container">
+                        <input type="search" class="search-input" placeholder="Search course content">
+                        <button class="search-button">&#128269;</button>
+                    </div>
+                
+                    <div class="search-prompt">
+                        <h1>Start a new search</h1>
+                        <p>To find captions, lectures or resources</p>
+                    </div>
+
+                    
+                </section>
+                <section class="overview">
+
+                    <div class="course-overview">
+                        <div class="course-stats">
+                            <div class="stat">
+                                <span class="stat-number">4.5</span>
+                                <span class="stat-star">&#9733;</span>
+                                <span class="stat-info">400 ratings</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">54,685</span>
+                                <span class="stat-info">Students</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2.5 hours</span>
+                                <span class="stat-info">Total</span>
+                            </div>
+                        </div>
+                
+                        <div class="course-details">
+                            <p><span class="icon">&#128197;</span> Last updated June 2024</p>
+                            <p><span class="icon">&#127760;</span> English <span class="caption-info">English [Auto]</span></p>
+                        </div>
+                
+                        <div class="course-numbers">
+                            <div class="number">
+                                <p><strong>Skill level:</strong> Beginner Level</p>
+                            </div>
+                            <div class="number">
+                                <p><strong>Students:</strong> 54,685</p>
+                            </div>
+                            <div class="number">
+                                <p><strong>Languages:</strong> English</p>
+                            </div>
+                            <div class="number">
+                                <p><strong>Captions:</strong> Yes</p>
+                            </div>
+                            <div class="number">
+                                <p><strong>Lectures:</strong> 44</p>
+                            </div>
+                            <div class="number">
+                                <p><strong>Video:</strong> 2.5 total hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feedback">
+                    <div class="con">
+                    <div class="wrapper">
+
+                  
+                    <h3 class="lo">Add a rating .</h3>
+                    <form action="#">
+                     <div class="starr-rating">
+                        
+                            <!-- <h7 class="rat">add Rating</h7> -->
+                             <input type="number" name="rating" hidden>
+                        <span class="starr" data-value="1">&#9733;</span>
+                        <span class="starr" data-value="2">&#9733;</span>
+                        <span class="starr" data-value="3">&#9733;</span>
+                        <span class="starr" data-value="4">&#9733;</span>
+                        <span class="starr" data-value="5">&#9733;</span>
+                        
+                        <!-- <div class="raating-output">Rating: <span id="raating-value">0</span></div>  -->
+                    </div>
+                    <textarea name="opinion" cols="30" rows="5" placeholder="your opinion"></textarea>
+                    <div class="btn-group">
+                    <button type="submit" class="btn submit">Submit</button>
+                    <button  class="btn cancel">Cancel</button>
+                    </div>
+                    </form>
+                      </div></div>
+                    
+                    
+                </section>
+                <section class="Downloads">
+            <h3 class="down">Download your pdf now</h3>
+            <a href="../../pdf/laravelpdf.pdf" class="pdf" target="_blank">Laravel</a><br>
+            
+        </section>
+            </div>
+
+        </section>
+        
+        
+
+        <section class="video-playlist">
+            <h3 class="title">Laravel Tutorial</h3>
+            <p>20 lessions </p>
+            <div class="videos">
+               
+                
+               
+            </div>
+
+
+        </section>
+        
+    </main>
+    <script src="../laravel/laravel__playlist.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // Get references to all the sections
+    const searchSection = document.querySelector('.search');
+    const overviewSection = document.querySelector('.overview');
+    const feedbackSection = document.querySelector('.feedback');
+    const downloadSection = document.querySelector('.Downloads');
+    
+    
+    // Get references to all the navigation links
+    const links = document.querySelectorAll('.lien a');
+
+    // Function to hide all sections
+    function hideAllSections() {
+        searchSection.style.display = 'none';
+        overviewSection.style.display = 'none';
+        feedbackSection.style.display = 'none';
+        downloadSection.style.display = 'none';
+    }
+
+    // Function to show the selected section based on index
+    function showSection(index) {
+        hideAllSections(); // Hide all sections first
+        if (index === 0) searchSection.style.display = 'block';
+        if (index === 1) overviewSection.style.display = 'block';
+        if (index === 2) feedbackSection.style.display = 'block';
+        if (index === 3) downloadSection.style.display = 'block';
+    }
+
+    // Attach event listeners to each link
+    links.forEach((link, index) => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            showSection(index); // Show the correct section based on the link index
+        });
+    });
+
+    // Show the search section by default when the page loads
+    showSection(0);
+});
+
+    </script>
+
+
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const stars = document.querySelectorAll('.starr');
+    const ratingValue = document.getElementById('raating-value');
+    let currentRating = 0;
+
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            currentRating = parseInt(star.getAttribute('data-value'));
+            updateStars();
+        });
+
+        star.addEventListener('mouseover', () => {
+            const value = parseInt(star.getAttribute('data-value'));
+            highlightStars(value);
+        });
+
+        star.addEventListener('mouseout', () => {
+            updateStars();
+        });
+    });
+
+    function updateStars() {
+        stars.forEach(star => {
+            const value = parseInt(star.getAttribute('data-value'));
+            if (value <= currentRating) {
+                star.classList.add('selected');
+            } else {
+                star.classList.remove('selected');
+            }
+        });
+        ratingValue.textContent = currentRating;
+    }
+
+    function highlightStars(value) {
+        stars.forEach(star => {
+            const starValue = parseInt(star.getAttribute('data-value'));
+            if (starValue <= value) {
+                star.classList.add('selected');
+            } else {
+                star.classList.remove('selected');
+            }
+        });
+    }
+});
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

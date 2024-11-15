@@ -1,0 +1,237 @@
+<link rel="stylesheet" href="design.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+<title>EduPro-LearNing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+<!-- navbar -->
+<nav class="z-ind">
+  <div class="container nav-container">
+    <a href="../home.html" class="edu">EduPro</a>
+    <ul class="nav__menu">
+      <li class="li1"><a href="../home.html" class="bag1 active hh6">home</a></li>
+      <li class="li1"><a href="../about.html" class="bag2 hh6">about</a></li>
+      <li class="li1"><a href="../courses.html" class="hh6">courses</a></li>
+      <li class="li1"><a href="../roadmap.html" class="hh6">Roadmap</a></li>
+      <li class="li1"><a href="../contact.html" class="hh6">contact</a></li>
+      <li class="li1"><a href="../faq.html" class="bag3 hh6">faq</a></li>
+      <li class="li1"><a href="../login.html" class="bag4 hh6">login</a></li>
+      <li class="li1">
+      <div class="wrap-check-14">
+      <label class="switch">
+      <input type="checkbox" checked onclick="myFunction()">
+      <span class="slider"></span>
+      </label>
+      </div>
+      </li>
+  </ul>
+  </div>
+  <input type="checkbox" id="check" >
+  <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+</nav> 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const checkBtn = document.querySelector('#check');
+    const ul1 = document.querySelector('.nav__menu');
+    
+    checkBtn.addEventListener('change', function() {
+      if (checkBtn.checked) {
+        ul1.style.left = '0%';
+      } else {
+        ul1.style.left = '-110%';
+      }
+    });
+  });
+</script>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+</script>
+                    <!--  -->
+                      <!--  -->
+<section class="zz">
+<div class="timline zz">
+        <div class="containnere left-container">
+            <img src="../img/graphic_design.png" alt="i">
+              <div class="text-box">
+                <h2> Fundamentals of Graphic Design</h2>
+                <small>1-10 days</small>
+                <h3 class="inter"><ins> ¤ </ins>Design Principles : </h3>
+                <h4><ins> * </ins>Color Theory : </h4>
+                <p><em>-</em>Understand color models (RGB, CMYK) and the color wheel.</p>
+                <p><em>-</em>Learn about color harmony, contrast, and the psychology of color.</p>
+                <h4><ins> * </ins>Typography : </h4>
+                <p><em>-</em>Learn about typefaces, fonts, and their classifications.</p>
+                <p><em>-</em>Understand the importance of hierarchy, spacing, and alignment in text.</p>
+                <p><em>-</em>Explore kerning, leading, and tracking for better readability.</p>
+                <h4><ins> * </ins>Layout and Composition : </h4>
+                <p><em>-</em>Understand the rule of thirds, grids, and symmetry.</p>
+                <p><em>-</em>Learn about balance, proximity, and alignment in layouts.</p>
+                <p><em>-</em>Explore the importance of white space in design.</p>
+                <h4><ins> * </ins>Visual Hierarchy : </h4>
+                <p><em>-</em>Learn how to direct viewers' attention using size, contrast, and positioning.</p>
+                <p><em>-</em>Understand the importance of focal points in design.</p>
+                <h4><ins> * </ins>Branding and Identity : </h4>
+                <p><em>-</em>Learn about creating logos, brand colors, and visual identity.</p>
+                <p><em>-</em>Understand the importance of consistency in branding materials.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/photoshop1.png" alt="i">
+            <div class="text-box">
+                <h2>Adobe Photoshop</h2>
+                <small>1-10 days</small>
+                <h3 class="inter"><ins> ¤ </ins>Basics : </h3>
+                <h4><ins> * </ins>Interface and Tools : </h4>
+                <p><em>-</em>Familiarize yourself with the Photoshop interface, panels, and tools.</p>
+                <p><em>-</em>Learn about layers, layer masks, and blending modes.</p>
+                <p><em>-</em>Explore basic tools like Move, Lasso, Magic Wand, and Pen Tool.</p>
+                <h4><ins> * </ins>Image Editing : </h4>
+                <p><em>-</em>Learn about cropping, resizing, and rotating images.</p>
+                <p><em>-</em>Understand color correction techniques using Levels, Curves, and Color Balance.</p>
+                <p><em>-</em>Explore retouching tools like Clone Stamp, Healing Brush, and Spot Healing.</p>
+                <h4><ins> * </ins>Working with Text : </h4>
+                <p><em>-</em>Learn about adding and formatting text in Photoshop.</p>
+                <p><em>-</em>Explore text effects like shadows, gradients, and 3D text.</p>
+                <h3 class="inter"><ins> ¤ </ins>Intermediate : </h3>
+                <h4><ins> * </ins>Selections and Masks : </h4>
+                <p><em>-</em>Learn about advanced selection techniques using the Pen Tool and Select Subject.</p>
+                <p><em>-</em>Understand how to create and refine masks for complex compositions.</p>
+                <h4><ins> * </ins>Image Manipulation : </h4>
+                <p><em>-</em>Explore advanced techniques like image warping, liquify, and puppet warp.</p>
+                <p><em>-</em>Learn about creating composite images using multiple layers and masks.</p>
+                <h4><ins> * </ins>Filters and Effects : </h4>
+                <p><em>-</em>Understand how to apply filters (EX : <em>'Gaussian Blur' , 'Sharpen'</em> ) and effects (EX : <em> 'drop shadows' , 'bevels'</em>).</p>
+                <p><em>-</em>Learn about smart filters for non-destructive editing.</p>
+                <h3 class="inter"><ins> ¤ </ins>Advanced : </h3>
+                <h4><ins> * </ins>Advanced Retouching : </h4>
+                <p><em>-</em>Explore high-end retouching techniques for portraits and product photography.</p>
+                <p><em>-</em>Learn about frequency separation and dodging & burning.</p>
+                <h4><ins> * </ins>Photo Manipulation : </h4>
+                <p><em>-</em>Master techniques for creating surreal and imaginative images.</p>
+                <p><em>-</em>Learn about advanced blending, perspective, and lighting effects.</p>
+                <h4><ins> * </ins>Automating Tasks : </h4>
+                <p><em>-</em>Explore actions and batch processing for automating repetitive tasks.</p>
+                <p><em>-</em>Learn about using scripts to enhance productivity.</p>
+                <h4><ins> * </ins>3D Design : </h4>
+                <p><em>-</em>Learn about creating and manipulating 3D objects in Photoshop.</p>
+                <p><em>-</em>Understand how to integrate 3D elements into 2D designs.</p>
+                <h3 class="inter"><ins> ¤ </ins>Projects and Practice : </h3>
+                <h4><ins> * </ins>Basic Projects : </h4>
+                <p><em>-</em>Create a photo collage.</p>
+                <p><em>-</em>Design a social media post.</p>
+                <p><em>-</em>Edit and retouch a portrait photo.</p>
+                <h4><ins> * </ins>Intermediate Projects : </h4>
+                <p><em>-</em>Design a movie poster.</p>
+                <p><em>-</em>Create a surreal photo manipulation.</p>
+                <p><em>-</em>Develop a brand’s visual identity.</p>
+                <h4><ins> * </ins>Advanced Projects : </h4>
+                <p><em>-</em>Design a magazine cover.</p>
+                <p><em>-</em>Create a complex photo composite.</p>
+                <p><em>-</em>Develop a 3D product mockup.</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/ai.png" alt="i">
+            <div class="text-box">
+                <h2>Adobe Illustrator</h2>
+                <small>1-10 days</small>
+                <h3><ins> ¤ </ins>Basics : </h3>
+                <h4><ins> * </ins>Interface and Tools : </h4>
+                <p><em>-</em>Familiarize yourself with the Illustrator interface, panels, and tools.</p>
+                <p><em>-</em>Learn about vector graphics and the difference between vector and raster images.</p>
+                <p><em>-</em>Explore basic tools like Pen Tool, Shape Tools, and Selection Tools.</p>
+                <h4><ins> * </ins>Working with Paths : </h4>
+                <p><em>-</em>Understand how to create and edit paths using the Pen Tool.</p>
+                <p><em>-</em>Learn about anchor points, handles, and Bezier curves.</p>
+                <p><em>-</em>Explore shape-building techniques using Pathfinder and Shape Builder.</p>
+                <h4><ins> * </ins>Colors and Gradients : </h4>
+                <p><em>-</em>Learn about applying and editing fills, strokes, and gradients.</p>
+                <p><em>-</em>Explore color palettes and swatches for consistent branding.</p>
+                <h3 class="inter"><ins> ¤ </ins>Intermediate : </h3>
+                <h4><ins> * </ins>Typography and Text Effects : </h4>
+                <p><em>-</em>Understand how to create and manipulate text in Illustrator.</p>
+                <p><em>-</em>Learn about creating custom type designs and text on a path.</p>
+                <p><em>-</em>Explore advanced text effects like 3D text, shadows, and outlines.</p>
+                <h4><ins> * </ins>Illustration Techniques:</h4>
+                <p><em>-</em>Learn about creating custom illustrations using the Pen Tool and Shape Tools.</p>
+                <p><em>-</em>Explore brush tools for hand-drawn effects and textures.</p>
+                <p><em>-</em>Understand how to create and apply patterns and textures.</p>
+                <h4><ins> * </ins>Logo Design : </h4>
+                <p><em>-</em>Learn about designing logos and brand marks.</p>
+                <p><em>-</em>Understand how to create scalable vector logos for various applications.</p>
+                <h3 class="inter"><ins> ¤ </ins>Advanced : </h3>
+                <h4><ins> * </ins>Advanced Vector Techniques : </h4>
+                <p><em>-</em>Explore the creation of complex vector illustrations and infographics.</p>
+                <p><em>-</em>Learn about advanced path editing and vector masking techniques.</p>
+                <p><em>-</em>Understand how to work with gradients, meshes, and blends for realistic effects.</p>
+                <h4><ins> * </ins>3D Design : </h4>
+                <p><em>-</em>Learn about creating and manipulating 3D objects and text in Illustrator.</p>
+                <p><em>-</em>Explore isometric design and 3D perspectives.</p>
+                <h4><ins> * </ins>Print and Production : </h4>
+                <p><em>-</em>Understand the principles of designing for print (EX : <em> 'bleed' , 'CMYK' , 'DPI'</em>).</p>
+                <p><em>-</em>Learn about preparing files for production (EX : <em>'print' , 'web' , 'packaging'</em> ).</p>
+                <h3 class="inter"><ins> ¤ </ins>Projects and Practice : </h3>
+                <h4><ins> * </ins>Basic Projects : </h4>
+                <p><em>-</em>Design a vector icon set.</p>
+                <p><em>-</em>Create a simple logo.</p>
+                <p><em>-</em>Develop a business card.</p>
+                <h4><ins> * </ins>Intermediate Projects : </h4>
+                <p><em>-</em>Design a vector illustration.</p>
+                <p><em>-</em>Create a branded stationery set.</p>
+                <p><em>-</em>Develop a vector infographic.</p>
+                <h4><ins> * </ins>Advanced Projects : </h4>
+                <p><em>-</em>Design a complex logo with multiple variations.</p>
+                <p><em>-</em>Create a detailed vector artwork.</p>
+                <p><em>-</em>Develop a complete brand identity package.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+</section>
+              <!-- end of office roadmap -->
+<footer>
+  <!--  -->
+  <div class="disnone">
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+    <p class="created">privacy policy terms & condition</p>
+    <p class="created">copyright &copy 2024 <span>EduPro</span> . all right reserved</p>
+  </div>
+  <!--  -->
+  <div class="disyes">
+  <div class="fouter">
+    <div>
+      <p class="created">copyright &copy 2024 EduPro . all right reserved</p>
+    </div>
+    <div>
+      <p class="created">privacy policy terms & condition</p>
+    </div>
+  </div>
+  <div>
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+  </div>
+</div>
+</footer>
+</body>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+// 
+
+</script>

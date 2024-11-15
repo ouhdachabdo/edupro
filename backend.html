@@ -1,0 +1,174 @@
+<link rel="stylesheet" href="backend.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+<title>EduPro-LearNing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+<!-- navbar -->
+<nav class="z-ind">
+  <div class="container nav-container">
+    <a href="../home.html" class="edu">EduPro</a>
+    <ul class="nav__menu">
+      <li class="li1"><a href="../home.html" class="bag1 active hh6">home</a></li>
+      <li class="li1"><a href="../about.html" class="bag2 hh6">about</a></li>
+      <li class="li1"><a href="../courses.html" class="hh6">courses</a></li>
+      <li class="li1"><a href="../roadmap.html" class="hh6">Roadmap</a></li>
+      <li class="li1"><a href="../contact.html" class="hh6">contact</a></li>
+      <li class="li1"><a href="../faq.html" class="bag3 hh6">faq</a></li>
+      <li class="li1"><a href="../login.html" class="bag4 hh6">login</a></li>
+      <li class="li1">
+      <div class="wrap-check-14">
+      <label class="switch">
+      <input type="checkbox" checked onclick="myFunction()">
+      <span class="slider"></span>
+      </label>
+      </div>
+      </li>
+  </ul>
+  </div>
+  <input type="checkbox" id="check" >
+  <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+</nav> 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const checkBtn = document.querySelector('#check');
+    const ul1 = document.querySelector('.nav__menu');
+    
+    checkBtn.addEventListener('change', function() {
+      if (checkBtn.checked) {
+        ul1.style.left = '0%';
+      } else {
+        ul1.style.left = '-110%';
+      }
+    });
+  });
+</script>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+</script>
+                    <!--  -->
+<section class="zz">
+  <div class="timline zz">
+        <div class="containnere left-container">
+            <img src="../img/php.png" alt="i">
+            <div class="text-box">
+                <h2>  PHP (Hypertext Preprocessor)</h2>
+                <small>1-15 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand the syntax of PHP.</p>
+                <p><em>-</em>Learn about variables, data types, and operators.</p>
+                <p><em>-</em>Explore control structures (EX : <em>'loops' , 'conditionals'</em> ).</p>
+                <p><em>-</em>Understand functions and scope.</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Learn about working with arrays and associative arrays.</p>
+                <p><em>-</em>Understand form handling and data validation.</p>
+                <p><em>-</em>Explore sessions and cookies.</p>
+                <p><em>-</em>Learn about file handling (EX : <em>'reading' , 'writing files'</em> ).</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Understand object-oriented programming (OOP) in PHP.</p>
+                <p><em>-</em>Explore namespaces, traits, and interfaces.</p>
+                <p><em>-</em>Learn about error handling and exceptions.</p>
+                <p><em>-</em>Understand secure coding practices (EX : <em>'input sanitization' , 'password hashing'</em> ).</p>
+                <p><em>-</em>Learn about using Composer for dependency management.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/sql.png" alt="i">
+            <div class="text-box">
+                <h2>  MySQL (Relational Database Management System)</h2>
+                <small>1-10 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand database concepts (EX : <em>'tables' , 'rows' , 'columns'</em> ).<p>
+                <p><em>-</em>Learn SQL syntax for basic CRUD operations (Create, Read, Update, Delete).</p>
+                <p><em>-</em>Explore data types in MySQL.</p>
+                <p><em>-</em>Understand primary keys, foreign keys, and indexes.</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Learn about relationships (EX : <em>'one-to-one' , 'one-to-many' , 'many-to-many'</em> ).</p>
+                <p><em>-</em>Explore JOIN operations (EX : <em>'INNER JOIN' , 'LEFT JOIN' , 'RIGHT JOIN</em> ).</p>
+                <p><em>-</em>Understand data normalization and database design principles.</p>
+                <p><em>-</em>Learn about aggregate functions (EX : <em>'COUNT' , 'SUM' , 'AVG'</em> ).</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Explore stored procedures, triggers, and views.</p>
+                <p><em>-</em>Understand database transactions and ACID properties.</p>
+                <p><em>-</em>Learn about database optimization techniques (EX : <em>'indexing' , 'query optimization'</em> ).</p>
+                <p><em>-</em>Explore database backup and restoration.</p>
+                <p><em>-</em>Understand using MySQL with PHP (EX : <em>'PDO' , 'MySQLi'</em> ).</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/laravel.png" alt="i">
+            <div class="text-box">
+                <h2>Laravel (PHP Framework)</h2>
+                <small>1-9 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand the MVC (Model-View-Controller) architecture.</p>
+                <p><em>-</em>Learn about Laravel's installation and setup.</p>
+                <p><em>-</em>Explore routing and controllers in Laravel.</p>
+                <p><em>-</em>Understand views and Blade templating.</p>
+                <p><em>-</em>Learn about Laravel's ORM, Eloquent, for database interactions.</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Understand middleware and service providers.</p>
+                <p><em>-</em>Learn about form handling and validation in Laravel.</p>
+                <p><em>-</em>Explore advanced Eloquent features (EX : <em>'relationships' , 'eager loading'</em> ).</p>
+                <p><em>-</em>Learn about file storage and handling in Laravel.</p>
+                <p><em>-</em>Understand authentication and authorization.</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Learn about building RESTful APIs with Laravel.</p>
+                <p><em>-</em>Explore Laravel's task scheduling and queues.</p>
+                <p><em>-</em>Understand testing in Laravel (EX : <em>'unit tests' , 'feature tests'</em> ).</p>
+                <p><em>-</em>Learn about event broadcasting and real-time communication with Laravel Echo.</p>
+                <p><em>-</em>Explore deploying Laravel applications (EX : <em>'Forge' , 'Envoyer' , 'Docker'</em> ).</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+    </div>
+</section>
+              <!-- end of backend roadmap -->
+<footer>
+  <!--  -->
+  <div class="disnone">
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+    <p class="created">privacy policy terms & condition</p>
+    <p class="created">copyright &copy 2024 <span>EduPro</span> . all right reserved</p>
+  </div>
+  <!--  -->
+  <div class="disyes">
+  <div class="fouter">
+    <div>
+      <p class="created">copyright &copy 2024 EduPro . all right reserved</p>
+    </div>
+    <div>
+      <p class="created">privacy policy terms & condition</p>
+    </div>
+  </div>
+  <div>
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+  </div>
+</div>
+</footer>
+</body>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+// 
+
+</script>

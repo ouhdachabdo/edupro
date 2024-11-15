@@ -1,0 +1,290 @@
+<link rel="stylesheet" href="game.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+<title>EduPro-LearNing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+<!-- navbar -->
+<nav class="z-ind">
+    <div class="container nav-container">
+      <a href="../home.html" class="edu">EduPro</a>
+      <ul class="nav__menu">
+        <li class="li1"><a href="../home.html" class="bag1 active hh6">home</a></li>
+        <li class="li1"><a href="../about.html" class="bag2 hh6">about</a></li>
+        <li class="li1"><a href="../courses.html" class="hh6">courses</a></li>
+        <li class="li1"><a href="../roadmap.html" class="hh6">Roadmap</a></li>
+        <li class="li1"><a href="../contact.html" class="hh6">contact</a></li>
+        <li class="li1"><a href="../faq.html" class="bag3 hh6">faq</a></li>
+        <li class="li1"><a href="../login.html" class="bag4 hh6">login</a></li>
+        <li class="li1">
+        <div class="wrap-check-14">
+        <label class="switch">
+        <input type="checkbox" checked onclick="myFunction()">
+        <span class="slider"></span>
+        </label>
+        </div>
+        </li>
+    </ul>
+    </div>
+    <input type="checkbox" id="check" >
+    <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+  </nav> 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkBtn = document.querySelector('#check');
+      const ul1 = document.querySelector('.nav__menu');
+      
+      checkBtn.addEventListener('change', function() {
+        if (checkBtn.checked) {
+          ul1.style.left = '0%';
+        } else {
+          ul1.style.left = '-110%';
+        }
+      });
+    });
+  </script>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+  }
+  // change navbar style on scroll
+  window.addEventListener('scroll' , () => {
+    document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+  })
+  </script>
+                      <!--  -->
+<section class="zz">
+<div class="timline zz">
+        <div class="containnere left-container">
+            <img src="../img/csharp.png" alt="i">
+                <div class="text-box">
+                <h2>Fundamentals of Programming</h2>
+                <small>1-4 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Learn a programming language commonly used in game development (EX : <em> 'C#' , 'C++' , 'Python'</em>).</p>
+                <p><em>-</em>Understand core programming concepts: variables, data types, control structures, loops, and functions.</p>
+                <p><em>-</em>Explore object-oriented programming (OOP) concepts: classes, objects, inheritance, polymorphism, and encapsulation.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/unity.png" alt="i">
+                <div class="text-box">
+                <h2>  Introduction to Game Development</h2>
+                <small>1-30 days</small>
+                <h3 class="inter"><ins> ¤ </ins>Game Engines : </h3>
+                <h4><ins> * </ins>Unity : </h4>
+                <p><em>-</em>Install Unity and understand its interface.</p>
+                <p><em>-</em>Learn the basics of C# for Unity scripting.</p>
+                <p><em>-</em>Explore creating simple 2D and 3D games.</p>
+                <h4><ins> * </ins>Unreal Engine : </h4>
+                <p><em>-</em>Install Unreal Engine and understand its interface.</p>
+                <p><em>-</em>Learn the basics of C++ for Unreal Engine scripting.</p>
+                <p><em>-</em>Explore creating simple 3D games using Blueprints.</p>
+                <h4><ins> * </ins>Basic Game Concepts : </h4>
+                <p><em>-</em>Understand game loops, frames, and updates.</p>
+                <p><em>-</em>Learn about game physics: collision detection, gravity, and forces.</p>
+                <p><em>-</em>Explore 2D and 3D coordinate systems and transformations.</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/gameroad.png" alt="i">
+            <div class="text-box">
+                <h2>Game Design Principles</h2>
+                <small>1-15 days</small>
+                <h4><ins> * </ins>Conceptualization : </h4>
+                <p><em>-</em>Understand game genres and design elements.</p>
+                <p><em>-</em>Learn about creating a game concept, story, and mechanics.</p>
+                <h4><ins> * </ins>Prototyping : </h4>
+                <p><em>-</em>Create simple prototypes to test gameplay mechanics.</p>
+                <p><em>-</em>Learn about iterative design and playtesting.</p>
+                <h4><ins> * </ins>Level Design : </h4>
+                <p><em>-</em>Understand the principles of level design and environment building.</p>
+                <p><em>-</em>Explore tools for creating levels and maps.</p>
+                <h4><ins> * </ins>Game Balancing : </h4>
+                <p><em>-</em>Learn about balancing gameplay elements (EX : <em>'difficulty' , 'rewards'</em> ).</p>
+                <p><em>-</em>Understand player feedback and adjustment.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/unity.png" alt="i">
+            <div class="text-box">
+                <h2>Game Development in Unity</h2>
+                <small>1-20 days</small>
+                <h4><ins> * </ins>2D Game Development : </h4>
+                <p><em>-</em>Learn about sprites, animations, and tilemaps.</p>
+                <p><em>-</em>Explore 2D physics, collisions, and triggers.</p>
+                <p><em>-</em>Understand camera control and parallax scrolling.</p>
+                <h4><ins> * </ins>3D Game Development : </h4>
+                <p><em>-</em>Explore 3D modeling basics, importing assets, and textures.</p>
+                <p><em>-</em>Learn about 3D physics, collisions, and raycasting.</p>
+                <p><em>-</em>Understand lighting, shadows, and shaders.</p>
+                <h4><ins> * </ins>Scripting in Unity : </h4>
+                <p><em>-</em>Learn about player input and movement.</p>
+                <p><em>-</em>Implement game mechanics: health systems, inventory, and AI.</p>
+                <p><em>-</em>Understand object-oriented programming within Unity.</p>
+                <h4><ins> * </ins>Advanced Unity Features : </h4>
+                <p><em>-</em>Learn about particle systems and visual effects.</p>
+                <p><em>-</em>Explore Unity's UI system for menus and HUDs.</p>
+                <p><em>-</em>Implement multiplayer functionality with Unity's networking.</p>
+                <p><em>-</em>Learn about optimization techniques for performance.</p>
+            </div>            
+            <span class="right-container-arrow"></span>
+        </div> 
+        <!--  -->
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/cpp.png" alt="i">
+            <div class="text-box">
+                <h2> Game Development in Unreal Engine</h2>
+                <small>1-15 days</small>
+                <h4><ins> * </ins>Blueprints Visual Scripting : </h4>
+                <p><em>-</em>Learn about creating game mechanics using Blueprints.</p>
+                <p><em>-</em>Explore event-driven programming with Blueprints.</p>
+                <p><em>-</em>Understand animations, state machines, and AI with Blueprints.</p>
+                <h4><ins> * </ins>C++ in Unreal Engine : </h4>
+                <p><em>-</em>Learn about the basics of C++ for Unreal Engine.</p>
+                <p><em>-</em>Implement custom game logic using C++.</p>
+                <p><em>-</em>Understand Unreal's class structure and API.</p>
+                <h4><ins> * </ins>Advanced Unreal Features : </h4>
+                <p><em>-</em>Understand Unreal's class structure and API.</p>
+                <p><em>-</em>Learn about creating complex characters and animations.</p>
+                <p><em>-</em>Implement multiplayer functionality with Unreal's networking.</p>
+                <p><em>-</em>Understand optimization techniques for high-performance games.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/mobile3.png" alt="i">
+            <div class="text-box">
+                <h2> Graphics and Animation</h2>
+                <small>1-10 days</small>
+                <h4><ins> * </ins>2D Graphics : </h4>
+                <p><em>-</em>Learn about creating and animating sprites.</p>
+                <p><em>-</em>Explore software like Photoshop, GIMP, or Aseprite for 2D asset creation.</p>
+                <h4><ins> * </ins>3D Graphics : </h4>
+                <p><em>-</em>Learn about 3D modeling, rigging, and animation.</p>
+                <p><em>-</em>Explore software like Blender, Maya, or 3ds Max for 3D asset creation.</p>
+                <p><em>-</em>Understand UV mapping, texturing, and shaders.</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Learn about keyframe animation, skeletal animation, and blend trees.</p>
+                <p><em>-</em>Implement animations in your game engine (Unity or Unreal).</p>
+            </div>            
+            <span class="right-container-arrow"></span>
+        </div> 
+        <!--  -->
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/sond.png" alt="i">
+            <div class="text-box">
+                <h2>7. Audio for Games</h2>
+                <small>1-15 days</small>
+                <h4><ins> * </ins>Sound Design : </h4>
+                <p><em>-</em>Learn about creating and editing sound effects.</p>
+                <p><em>-</em>Explore software like Audacity or FL Studio for audio creation.</p>
+                <p><em>-</em>Understand how to implement sound in your game engine.</p>
+                <h4><ins> * </ins>Music Composition : </h4>
+                <p><em>-</em>Learn about composing music for different game genres.</p>
+                <p><em>-</em>Explore software like Ableton Live, Logic Pro, or FL Studio.</p>
+                <h4><ins> * </ins>Voice Acting : </h4>
+                <p><em>-</em>Understand the basics of recording and editing voiceovers.</p>
+                <p><em>-</em>Learn how to integrate voice acting into your game.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/UX.png" alt="i">
+            <div class="text-box">
+                <h2>User Interface (UI) and User Experience (UX)</h2>
+                <small>1-10 days</small>
+                <h4><ins> * </ins>UI Design : </h4>
+                <p><em>-</em>Learn about creating intuitive and visually appealing game interfaces.</p>
+                <p><em>-</em>Understand best practices for designing menus, HUDs, and buttons.</p>
+                <h4><ins> * </ins>UX Design : </h4>
+                <p><em>-</em>Learn about creating a smooth and engaging user experience.</p>
+                <p><em>-</em>Explore player feedback and usability testing.</p>
+            </div>            
+            <span class="right-container-arrow"></span>
+        </div> 
+        <!--  -->
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/mobile4.png" alt="i">
+            <div class="text-box">
+                <h2>Game Testing and Debugging</h2>
+                <small>1-10 days</small>
+                <h4><ins> * </ins>Testing : </h4>
+                <p><em>-</em>Understand different types of testing: unit testing, integration testing, and playtesting.</p>
+                <p><em>-</em>Learn about bug tracking and version control.</p>
+                <h4><ins> * </ins>Debugging : </h4>
+                <p><em>-</em>Explore debugging tools and techniques specific to your game engine.</p>
+                <p><em>-</em>Understand how to optimize game performance.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/mobile2.png" alt="i">
+            <div class="text-box">
+                <h2>Monetization and Distribution</h2>
+                <small>1-10 days</small>
+                <h4><ins> * </ins>Monetization Strategies : </h4>
+                <p><em>-</em>Learn about different monetization models: freemium, ads, in-app purchases, and premium.</p>
+                <p><em>-</em>Understand how to implement in-game purchases.</p>
+                <h4><ins> * </ins>Game Distribution : </h4>
+                <p><em>-</em>Explore platforms for distributing your game (EX : <em>'Steam', 'Google Play', 'App Store'</em> ).</p>
+                <p><em>-</em>Learn about the submission process, marketing, and post-launch support.</p>
+            </div>            
+            <span class="right-container-arrow"></span>
+        </div> 
+        <!--  -->
+    </div>
+</section>
+                <!-- end of game roadmap -->
+<footer>
+  <!--  -->
+  <div class="disnone">
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+    <p class="created">privacy policy terms & condition</p>
+    <p class="created">copyright &copy 2024 <span>EduPro</span> . all right reserved</p>
+  </div>
+  <!--  -->
+  <div class="disyes">
+  <div class="fouter">
+    <div>
+      <p class="created">copyright &copy 2024 EduPro . all right reserved</p>
+    </div>
+    <div>
+      <p class="created">privacy policy terms & condition</p>
+    </div>
+  </div>
+  <div>
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+  </div>
+</div>
+</footer>
+</body>
+<script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+    document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+// 
+
+</script>

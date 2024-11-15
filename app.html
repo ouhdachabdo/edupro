@@ -1,0 +1,292 @@
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+<title>EduPro-LearNing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+<!-- navbar -->
+<nav class="z-ind">
+    <div class="container nav-container">
+      <a href="../home.html" class="edu">EduPro</a>
+      <ul class="nav__menu">
+        <li class="li1"><a href="../home.html" class="bag1 active hh6">home</a></li>
+        <li class="li1"><a href="../about.html" class="bag2 hh6">about</a></li>
+        <li class="li1"><a href="../courses.html" class="hh6">courses</a></li>
+        <li class="li1"><a href="../roadmap.html" class="hh6">Roadmap</a></li>
+        <li class="li1"><a href="../contact.html" class="hh6">contact</a></li>
+        <li class="li1"><a href="../faq.html" class="bag3 hh6">faq</a></li>
+        <li class="li1"><a href="../login.html" class="bag4 hh6">login</a></li>
+        <li class="li1">
+        <div class="wrap-check-14">
+        <label class="switch">
+        <input type="checkbox" checked onclick="myFunction()">
+        <span class="slider"></span>
+        </label>
+        </div>
+        </li>
+    </ul>
+    </div>
+    <input type="checkbox" id="check" >
+    <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+  </nav> 
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const checkBtn = document.querySelector('#check');
+      const ul1 = document.querySelector('.nav__menu');
+      
+      checkBtn.addEventListener('change', function() {
+        if (checkBtn.checked) {
+          ul1.style.left = '0%';
+        } else {
+          ul1.style.left = '-110%';
+        }
+      });
+    });
+  </script>
+  <script>
+    function myFunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+  }
+  // change navbar style on scroll
+  window.addEventListener('scroll' , () => {
+    document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+  })
+  </script>
+                      <!--  -->
+<section class="zz">
+  <div class="timline zz">
+        <div class="containnere left-container">
+            <img src="../img/flutter.png" alt="i">
+            <div class="text-box">
+                <h2> Fundamentals of Programming</h2>
+                <small>1-20 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Learn a programming language commonly used in app development (EX / <em>'Java' , 'Kotlin for Android' ; 'Swift for iOS'</em> ).</p>
+                <p><em>-</em>Understand core programming concepts: variables, data types, control structures, loops, and functions.</p>
+                <p><em>-</em>Explore object-oriented programming (OOP) concepts: classes, objects, inheritance, polymorphism, and encapsulation.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/kotlinroad.png" alt="i">
+            <div class="text-box">
+                <h2>Mobile App Development (Native)</h2>
+                <small>1-30 days</small>
+                <h3 class="inter"><ins> ¤ </ins>Android Development : </h3>
+                <h4><ins> *    </ins>Environment Setup :</h4>
+                <p><em>-</em>Install Android Studio and configure the Android SDK.</p>
+                <h4><ins> *   </ins>UI Design :</h4>
+                <p><em>-</em>Learn XML for designing layouts.</p>
+                <p><em>-</em>Explore common UI components: TextView, EditText, Button, RecyclerView.</p>
+                <p><em>-</em>Understand responsive design for different screen sizes.</p>
+                <h4><ins> *   </ins>Core Concepts: : </h4>
+                <p><em>-</em>Learn about activities, fragments, and intents.</p>
+                <p><em>-</em>Understand the Android lifecycle and how to manage state.</p>
+                <p><em>-</em>Explore data storage options: SharedPreferences, SQLite, Room.</p>
+                <p><em>-</em>Learn about networking: REST APIs, Retrofit, and handling JSON data.</p>
+                <p><em>-</em>Implement permissions and security best practices.</p>
+                <h4><ins> *   </ins>Advanced : </h4>
+                <p><em>-</em>Explore advanced topics like custom views, animations, and transitions.</p>
+                <p><em>-</em>Understand threading and asynchronous tasks (EX : <em>'AsyncTask' , 'Coroutines'</em> ).</p>
+                <p><em>-</em>Learn about background tasks with WorkManager or JobScheduler.</p>
+                <p><em>-</em>Implement push notifications with Firebase Cloud Messaging (FCM).</p>
+                <p><em>-</em>Understand Google Play Store deployment.</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/swiftroad.png" alt="i">
+                        <div class="text-box">
+                <h2>Mobile App Development (Native)</h2>
+                <small>1-30 days</small>
+                <h3 class="inter"><ins> ¤ </ins>iOS Development :</h3>
+                <h4><ins> *    </ins>Environment Setup :</h4>
+                <p><em>-</em>Install Xcode and configure the iOS SDK.</p>
+                <h4><ins> *   </ins>UI Design :</h4>
+                <p><em>-</em>Learn SwiftUI or UIKit for designing interfaces.</p>
+                <p><em>-</em>Explore common UI components: UILabel, UIButton, UITableView, CollectionView.</p>
+                <p><em>-</em>Understand Auto Layout and constraints for responsive design.</p>
+                <h4><ins> *   </ins>Core Concepts: : </h4>
+                <p><em>-</em>Learn about view controllers, navigation, and segues.</p>
+                <p><em>-</em>Understand the iOS lifecycle and managing state.</p>
+                <p><em>-</em>Explore data storage options: UserDefaults, Core Data, Realm<p>
+                <p><em>-</em>Learn about networking: URLSession, handling JSON data, Alamofire.</p>
+                <p><em>-</em>Implement permissions and security best practices.</p>
+                <h4><ins> *   </ins>Advanced : </h4>
+                <p><em>-</em>Explore advanced topics like animations, transitions, and custom controls.</p>
+                <p><em>-</em>Understand threading and asynchronous tasks (e.g., GCD, Combine).</p>
+                <p><em>-</em>Learn about background tasks and notifications.</p>
+                <p><em>-</em>Implement in-app purchases and App Store deployment.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/reactnativeroad.png" alt="i">
+            <div class="text-box">
+                <h2> Cross-Platform Development</h2>
+                <small>1-30 days</small>
+                <h3 class="inter"><ins> ¤ </ins>React Native :</h3>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Learn JavaScript and React fundamentals.</p>
+                <p><em>-</em>Understand the architecture of a React Native app.</p>
+                <p><em>-</em>Explore common components: View, Text, Image, ScrollView.</p>
+                <p><em>-</em>Learn about navigation with React Navigation.</p>
+                <h4><ins> * </ins>Core Concepts :</h4>
+                <p><em>-</em>Understand state management (EX : <em>'Context API' , 'Redux'</em> ).</p>
+                <p><em>-</em>Learn about platform-specific code and Native Modules.</p>
+                <p><em>-</em>Implement REST API calls and data handling.</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Explore performance optimization techniques.</p>
+                <p><em>-</em>Learn about custom native modules and bridging.</p>
+                <p><em>-</em>Implement push notifications and background tasks.</p>
+                <p><em>-</em>Understand deployment to Google Play and App Store.</p>
+                <h3 class="inter"><ins> ¤ </ins>Flutter :</h3>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Learn Dart programming language.</p>
+                <p><em>-</em>Understand the architecture of a Flutter app.</p>
+                <p><em>-</em>Explore widgets and layouts.</p>
+                <p><em>-</em>Learn about navigation and routing.</p>
+                <h4><ins> * </ins>Core Concepts :</h4>
+                <p><em>-</em>Understand state management (EX : <em> 'Provider' , 'Riverpod' , 'Bloc'</em>).</p>
+                <p><em>-</em>Learn about handling forms and validation.</p>
+                <p><em>-</em>Implement REST API calls and JSON data handling.</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Explore custom animations and transitions.</p>
+                <p><em>-</em>Learn about platform channels for native functionality.</p>
+                <p><em>-</em>Implement push notifications and background tasks.</p>
+                <p><em>-</em>Understand deployment to Google Play and App Store.</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div> 
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/mobile2.png" alt="i">
+            <div class="text-box">
+                <h2> Backend Development for Mobile Apps</h2>
+                <small>1-7 days</small>
+                <h4><ins> * </ins>API Development : </h4>
+                <p><em>-</em>Learn about RESTful APIs and GraphQL.</p>
+                <p><em>-</em>Understand JSON and data serialization/deserialization.</p>
+                <p><em>-</em>Implement user authentication (EX : <em> 'JWT' , 'OAuth'</em>).</p>
+                <p><em>-</em>Learn about database integration (EX : <em>'MongoDB', 'MySQL', 'Firebase'</em> ).</p>
+                <h4><ins> * </ins>Backend as a Service (BaaS) : </h4>
+                <p><em>-</em>Explore platforms like Firebase, AWS Amplify, and Supabase.</p>
+                <p><em>-</em>Learn about real-time databases, cloud functions, and user authentication.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/mobile3.png" alt="i">
+            <div class="text-box">
+                <h2>Testing and Debugging</h2>
+                <small>1-4 days</small>
+                <h4><ins> * </ins>Unit Testing : </h4>
+                <p><em>-</em>Learn how to write unit tests for individual components and logic.</p>
+                <h4><ins> * </ins>Integration Testing : </h4>
+                <p><em>-</em>Understand testing the interaction between different components or modules.</p>
+                <h4><ins> * </ins>UI Testing : </h4>
+                <p><em>-</em>Learn how to automate UI testing for your app (EX : <em>'Espresso for Android' , 'XCTest for iOS'</em> ).</p>
+                <h4><ins> * </ins>Debugging : </h4>
+                <p><em>-</em>Explore tools and techniques for debugging your app (EX : <em>'Logcat' , 'Xcode debugger'</em> ).</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div> 
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/gitroad.png" alt="i">
+            <div class="text-box">
+                <h2> Version Control and Collaboration</h2>
+                <small>1-2 days</small>
+                <h4><ins> * </ins>Git and GitHub : </h4>
+                <p><em>-</em>Understand version control concepts.</p>
+                <p><em>-</em>Learn about branching, merging, and pull requests.</p>
+                <p><em>-</em>Collaborate on projects using GitHub or GitLab.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/mobile4.png" alt="i">
+            <div class="text-box">
+                <h2> Continuous Integration and Deployment (CI/CD)</h2>
+                <small>1-3 days</small>
+                <h4><ins> * </ins>CI/CD Tools : </h4>
+                <p><em>-</em>Explore tools like Jenkins, CircleCI, and GitHub Actions.</p>
+                <p><em>-</em>Learn about automating testing and deployment.</p>
+                <h4><ins> * </ins>App Store and Play Store Deployment : </h4>
+                <p><em>-</em>Understand the process of submitting apps to the App Store and Google Play.</p>
+                <p><em>-</em>Learn about app signing, versioning, and handling updates.</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div> 
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/mobile5.png" alt="i">
+            <div class="text-box">
+                <h2> App Performance and Optimization</h2>
+                <small>1-3 days</small>
+                <h4><ins> * </ins>Performance Monitoring : </h4>
+                <p><em>-</em>Use tools like Android Profiler, Xcode Instruments, and Firebase Performance Monitoring.</p>
+                <h4><ins> * </ins>Optimization Techniques : </h4>
+                <p><em>-</em>Learn about reducing app size, optimizing load times, and managing memory.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+                <div class="containnere right-container">
+            <img src="../img/securitéroad.png" alt="i">
+            <div class="text-box">
+                <h2> Security Best Practices</h2>
+                <small>1-3 days</small>
+                <h4><ins> * </ins>Data Protection : </h4>
+                <p><em>-</em>Understand encryption for data at rest and in transit.</p>
+                <p><em>-</em>Learn about secure user authentication and authorization.</p>
+                <h4><ins> * </ins>App Security : </h4>
+                <p><em>-</em>Implement secure coding practices to protect against common vulnerabilities (EX : <em>'SQL injection' , 'XSS'</em> ).</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div> 
+        <!--  -->
+    </div>
+</section>
+              <!-- end of app roadmap -->
+<footer>
+  <!--  -->
+  <div class="disnone">
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+    <p class="created">privacy policy terms & condition</p>
+    <p class="created">copyright &copy 2024 <span>EduPro</span> . all right reserved</p>
+  </div>
+  <!--  -->
+  <div class="disyes">
+  <div class="fouter">
+    <div>
+      <p class="created">copyright &copy 2024 EduPro . all right reserved</p>
+    </div>
+    <div>
+      <p class="created">privacy policy terms & condition</p>
+    </div>
+  </div>
+  <div>
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+  </div>
+</div>
+</footer>
+</body>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+// 
+
+</script>

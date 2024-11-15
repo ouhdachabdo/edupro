@@ -1,0 +1,187 @@
+<link rel="stylesheet" href="frontend.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+<title>EduPro-LearNing</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+<!-- navbar -->
+<nav class="z-ind">
+  <div class="container nav-container">
+    <a href="../home.html" class="edu">EduPro</a>
+    <ul class="nav__menu">
+      <li class="li1"><a href="../home.html" class="bag1 active hh6">home</a></li>
+      <li class="li1"><a href="../about.html" class="bag2 hh6">about</a></li>
+      <li class="li1"><a href="../courses.html" class="hh6">courses</a></li>
+      <li class="li1"><a href="../roadmap.html" class="hh6">Roadmap</a></li>
+      <li class="li1"><a href="../contact.html" class="hh6">contact</a></li>
+      <li class="li1"><a href="../faq.html" class="bag3 hh6">faq</a></li>
+      <li class="li1"><a href="../login.html" class="bag4 hh6">login</a></li>
+      <li class="li1">
+      <div class="wrap-check-14">
+      <label class="switch">
+      <input type="checkbox" checked onclick="myFunction()">
+      <span class="slider"></span>
+      </label>
+      </div>
+      </li>
+  </ul>
+  </div>
+  <input type="checkbox" id="check" >
+  <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+</nav> 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const checkBtn = document.querySelector('#check');
+    const ul1 = document.querySelector('.nav__menu');
+    
+    checkBtn.addEventListener('change', function() {
+      if (checkBtn.checked) {
+        ul1.style.left = '0%';
+      } else {
+        ul1.style.left = '-110%';
+      }
+    });
+  });
+</script>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+</script>
+                    <!--  -->
+<section class="zz">
+  <div class="timline zz">
+        <div class="containnere left-container">
+            <img src="../img/html.png" alt="i">
+            <div class="text-box">
+                <h2> HTML (Hypertext Markup Language)</h2>
+                <small>1-3 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand the structure of an HTML document.</p>
+                <p><em>-</em>Learn about tags, elements, and attributes.</p>
+                <p><em>-</em>Explore common HTML tags (EX : <em>'div' , 'span' , 'a' , 'img' , 'form' , 'input'</em> )</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Understand semantic HTML (EX : <em>'headre' , 'footer' , 'article' , 'section'</em> )</p>
+                <p><em>-</em>Learn about forms and form validations.</p>
+                <p><em>-</em>Explore media tags (EX : <em>'video' , 'audio' , 'picture'</em> )</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Learn about accessibility (ARIA roles, attributes).</p>
+                <p><em>-</em>Understand the importance of SEO-friendly HTML.</p>
+                <p><em>-</em>Explore HTML5 APIs (EX : <em>'Geolocation' , 'Web Storage'</em> ).</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/css.png" alt="i">
+            <div class="text-box">
+                <h2> CSS (Cascading Style Sheets)</h2>
+                <small>1-3 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand the syntax of CSS.</p>
+                <p><em>-</em>Learn about selectors, properties, and values.</p>
+                <p><em>-</em>Explore the box model (margin, border, padding, content).</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Learn about CSS layout techniques (EX : <em>'Flexbox' , 'Grid'</em> ).</p>
+                <p><em>-</em>Understand responsive design and media queries.</p>
+                <p><em>-</em>Explore pseudo-classes and pseudo-elements (EX : <em>':hover' , ':before'</em> ).</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Learn about CSS preprocessors (EX : <em>'SASS' , 'LESS'</em>).</p>
+                <p><em>-</em>Explore CSS animations and transitions.</p>
+                <p><em>-</em>Understand CSS methodologies (EX : <em>'BEM' , 'SMACSS'</em>).</p>
+                <p><em>-</em>Learn about modern CSS frameworks (EX : <em>'Bootstrap' , 'Tailwind CSS'</em> ).</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere left-container">
+            <img src="../img/javascript.png" alt="i">
+            <div class="text-box">
+                <h2> JavaScript (JS)</h2>
+                <small>1-15 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand the syntax of JavaScript.</p>
+                <p><em>-</em>Learn about variables, data types, and operators.</p>
+                <p><em>-</em>Explore control structures (EX : <em> 'loops' , 'conditionals'</em>).</p>
+                <p><em>-</em>Understand functions and scope.</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Learn about DOM manipulation.</p>
+                <p><em>-</em>Understand event handling (EX : <em>'click' , 'hover'</em> ).</p>
+                <p><em>-</em>Explore ES6+ features (EX : <em>'arrow functions' , 'promises' , 'async/await'</em> ).</p>
+                <p><em>-</em>Learn about working with APIs (EX : <em>'Fetch API' , 'Axios'</em> ).</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Understand JavaScript design patterns (EX : <em>'Module' , 'Singleton'</em> ).</p>
+                <p><em>-</em>Learn about error handling and debugging.</p>
+                <p><em>-</em>Explore JavaScript frameworks (EX : <em> 'Vue.js' , 'Angular'</em>).</p>
+                <p><em>-</em>Understand performance optimization techniques.</p>
+            </div>
+            <span class="left-container-arrow"></span>
+        </div>
+        <!--  -->
+        <div class="containnere right-container">
+            <img src="../img/react.png" alt="i">
+            <div class="text-box">
+                <h2> React (JavaScript Library)</h2>
+                <small>1-10 days</small>
+                <h4><ins> * </ins>Basics : </h4>
+                <p><em>-</em>Understand the React component model.</p>
+                <p><em>-</em>Learn about JSX syntax.</p>
+                <p><em>-</em>Explore state and props.</p>
+                <p><em>-</em>Understand the concept of virtual DOM.</p>
+                <h4><ins> * </ins>Intermediate : </h4>
+                <p><em>-</em>Learn about React hooks (EX : <em> 'useState' , 'useEffect'</em>).</p>
+                <p><em>-</em>Explore React Router for navigation.</p>
+                <p><em>-</em>Understand component lifecycle methods.</p>
+                <p><em>-</em>Learn about state management with Context API or Redux.</p>
+                <h4><ins> * </ins>Advanced : </h4>
+                <p><em>-</em>Learn about performance optimization in React (EX : <em>'memoization' , 'lazy loading'</em>).<p>
+                <p><em>-</em>Understand advanced hooks (EX : <em>'useReducer', 'useMemo'</em> ).</p>
+                <p><em>-</em>Explore testing in React (EX : <em>'Jest' , 'React Testing Library'</em> ).</p>
+                <p><em>-</em>Understand server-side rendering (SSR) and static site generation (SSG) with Next.js.</p>
+                <p><em>-</em>Learn about building and deploying React applications.</p>
+            </div>
+            <span class="right-container-arrow"></span>
+        </div> 
+    </div>
+</section>
+              <!-- end of frontend roadmap -->
+<footer>
+  <!--  -->
+  <div class="disnone">
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+    <p class="created">privacy policy terms & condition</p>
+    <p class="created">copyright &copy 2024 <span>EduPro</span> . all right reserved</p>
+  </div>
+  <!--  -->
+  <div class="disyes">
+  <div class="fouter">
+    <div>
+      <p class="created">copyright &copy 2024 EduPro . all right reserved</p>
+    </div>
+    <div>
+      <p class="created">privacy policy terms & condition</p>
+    </div>
+  </div>
+  <div>
+    <p class="created">created by : abdelatif ouhdach & abdelaali saltani</p>
+  </div>
+</div>
+</footer>
+</body>
+<script>
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}
+// change navbar style on scroll
+window.addEventListener('scroll' , () => {
+  document.querySelector('nav').classList.toggle('window-scroll' , window.scrollY > 0)
+})
+// 
+
+</script>
